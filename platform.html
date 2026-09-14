@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Platform / The BIM Factory</title>
+<meta name="description" content="BIM Genesis and Polaris: eight tools on one platform, one database, running delivery and daily operations at TBF." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="The BIM Factory" />
+<meta property="og:title" content="The Platform / The BIM Factory" />
+<meta property="og:description" content="BIM Genesis and Polaris. Eight tools on one platform, one database, running delivery and daily operations." />
+<meta property="og:url" content="https://www.thebimfactory.info/platform.html" />
+<meta property="og:image" content="https://www.thebimfactory.info/og-preview.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The BIM Factory. Most BIM firms buy their tools. We engineer ours." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Platform / The BIM Factory" />
+<meta name="twitter:description" content="BIM Genesis and Polaris. Eight tools on one platform, one database, running delivery and daily operations." />
+<meta name="twitter:image" content="https://www.thebimfactory.info/og-preview.png" />
+<link rel="canonical" href="https://www.thebimfactory.info/platform.html" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHJ4PSIxODAiIGZpbGw9IiMwRjBGMEUiLz48cGF0aCBkPSJNIDQ5OS4xOCwxNC45NiBMIDM4NC40OCwzNjUuODYgTCA0Mi45MywzNjUuODYgTCAzMTkuMDYsNTY3LjIzIEwgMjA3Ljc2LDkwOC43OCBMIDUwMC4wMyw2OTkuNzcgTCA3ODkuNzYsOTA4Ljc4IEwgNzEyLjQ0LDY3MC44OCBMIDM4Ny4wMywzNjcuNTYgTCA3MjAuMDksNTQyLjU5IEwgOTY3LjM0LDM2NS44NiBMIDYxMy44OSwzNjUuODYgWiIgZmlsbD0iI0Y0RjBFNiIvPjwvc3ZnPg==" />
+<link rel="alternate icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAHD0lEQVRoBdXBfUzTdx4H8PcXxG8/0IpxYsjOqbgChzwd94fKZRdc4rnIk+jJo1IeCjpFZ5GTySWw+YQ3Hkyw5TaUmWmBM2IYCnNuOk9ku0w7dwHMGBwIdIua2UQaIEUs9hISE4gU+yu/3x+8XowTYS5jnAhzGeNEmMsYJ8JcxjgR5jLGiSCZdRERN1taICXGiSCZL5qaNLm5/+vpgWQYJ4I0Fi5c+MvAwKHDh8vKyyEZxokgjW0pKZ9WV9++fSfi7XWQDONEkMa/6uo2x8U9f/78TaXy4aNHkAbjRJAAEf1qNHp4eAB4b9++U6dPQxqME0ECMdHR9RcuYML169ejY2MhDcaJIIFTVVWq1FRMGBsbe2P5crPZDAkwTgSxubq6DvT3L37tNbyQnpl5/vx5SIBxIogtIiLiqy+/xCQNn3+esm0bJMA4EcRWXlqak5ODSYaGht5Yvnx0dBRiY5wIomKMdXV2Llu2DFNt2br1ypUrEBvjRBDVH8PC/vPdd3jJZ2fPvrtrF8TGOBFE9UFRUcHBg3jJb7899nlz5fj4OETFOBFE9YPBEBQYiOn8ZcOG1m+/hagYJ4J4lErlvfZ22KHV6Q7k50NUjBNBPLkazfHiYtjR198fsGoVRMU4EcTz72++CQ8Ph31r1oa3tbdBPIwTQSTe3t73e3pcXFxg37Hi4iNHj0I8jBNBJGq1ulKrxYzaOzpWr1kD8TBOBJFcamx8Z8MGvEpAYGBfXx9EwjgRJvHx8Tl39uwfQkMhXMe9e2az+e116zAjq9Vqs9kgXP/AQHp6+t0ff8QkjBNhKplMVlpSkp2VBeHO6fWNly4d/vDDoKAgiKqxsfHd3bsHBwcxFeNEmE5CfHylTqdQKCBQfX199s6diYmJRYWFv3v9dcza6OjowYKCqlOnbDYbXsI4Eezw9fWt1etDQkIgUFNz8/bUVFdX1/f27s3bv1+hUMBZ3d3dqSpVW3s77GCcCPbJZLLysjJ1ZiYEunb9ekJiosViWbJkyd8LCtSZmW5ubhCotq5un0YzPDwM+xgnwqskJSbqtFq5XA4hWltbt2zdOjQ0BMDPz+/woUObYmMZY3DAyMiIJjdXX1ODV2GcCA7w8/Or1euDg4MhhMFgiNm0aXBwEBP+FB5efOzY2rVrMaOOjo7tKlVXVxccwDgRHENE5WVlmRkZEKKtrS0qJsZkMmECY2xzXNzhQ4eUSiWmc7q6Ov/99y0WCxzDOBGESE5O1lZUyOVyOKzz5583RkY+evQIL7i5uWVnZRUUFHgtXowXzGbzrpychoYGCME4EQTy9/ev1euDgoLgsN7e3o1RUUajEZN4enrm7d+/d88eIjIYDKr09L6+PgjEOBGEc3d3P1Fenp6WBocZjcaNUVG9vb2YaunSpTHR0Z+eOTM2NgbhGCeCs7alpJysqPDw8IBjHj58GBkd3dnZCfEwToRZuP3996EhIXCYyWSKiolpa2uDSBgngrN8Vqzo/OknCDQ4OBgbF3fnzh2IgXEiOGvvnj2lJSUQbmho6K/x8bdu3cKsMU4EZ137+us/v/UWnGKxWBKSkq5du4bZYZwITvHy8uq/f9/V1RXOevr0aapKdbmpCbPAOBGckpaWVvXxx5gdq9WaqVZfqK+HsxgnglMaLl6MjIzErI2Pj68KDBwwGuEUxokgnFwu/9VolMlkmJHVap03bx5eJe/AgcrKSjiFcSIIt2Xz5rraWsyou7s7VaUKCws7ceKEOxHsa2lpeWfjRjiFcSII99mZM0lJSbCvtq5un0YzPDwMICgwsKam5vf+/rDDarWuWLnSZDJBOMaJIND8+fN/MQ54LvDEdEZGRjS5ufqaGkwil8u1FRXJycmwY8fOnef0egjHOBEEWr9+ffPly5hOR0fHdpWqq6sL08nMyCgvKyMivKSpuTk+IQHCMU4EgU5WVOzIzsZLTldXH8jPHx0dhX3BwcE1er2/nx+mslgsS5ctGxkZgUCME0EIFxeX+z093t7emGTQbN6dk9PQ0AAHyOVynVablJiIqZJSUhobGyEQ40QQYs3q1S03b2ISg+EHVZqqr78fQqjV6rLSUpLJ8EJtXZ06KwsCMU4EIY4eOfK3vDxMsNlsFSdPFhYVPXv2DMKFhITU6vW+vr6Y8OTJk+U+PmNjYxCCcSIIca+9XalUAjCZTFk7dly9ehWzoFAoKnW6hPh4TIiMjr5x4waEYJwIDgsICPjv3bsAWltb0zIyHjx4ADFkZ2WVlpTIZLJPPqnS7M+FEIwTwWH5+fkfFBb+46OPio8fHx8fh3hCQ0Nr9Xpyd1f6+tpsNjiMcSI47GJ9vVana2lpgQQWKBb8s1JXodUaDAY4jHEiOMbFxWXRokUmkwlS8vLyevz4MRzGOBHmMsaJMJcxToS5jHEizGWME2Eu+z8GG16fTovewwAAAABJRU5ErkJggg==" />
+<link rel="apple-touch-icon" href="data:image/png;base64,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" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+
+:root{
+  --ink:#0F0F0E;
+  --ink-2:#17160F;
+  --surface:#1B1A14;
+  --cream:#F4F0E6;
+  --cream-2:#EBE6D8;
+  --gold:#C99A3F;
+  --gold-bright:#E2B85C;
+  --muted:#8C887C;
+  --muted-dark:#6B675C;
+  --line-dark:rgba(244,240,230,0.10);
+  --line-light:rgba(15,15,14,0.12);
+  --font-display:"Poppins",sans-serif;
+  --font-body:"Be Vietnam Pro",sans-serif;
+  --font-mono:"JetBrains Mono",monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--cream);
+  font-family:var(--font-body);
+  font-size:17px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;line-height:1.08;letter-spacing:-0.02em}
+a{color:inherit;text-decoration:none}
+
+/* ===== shared layout ===== */
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:28px;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);display:inline-block}
+.sec{padding:130px 0;position:relative}
+.sec.dark{background:var(--ink)}
+.sec.deep{background:var(--ink-2)}
+.sec.light{background:var(--cream);color:var(--ink)}
+.sec.light .eyebrow{color:#9A7420}
+.sec.light .eyebrow::before{background:#9A7420}
+
+/* blueprint grid on dark sections */
+.grid-bg{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(var(--line-dark) 1px,transparent 1px),
+    linear-gradient(90deg,var(--line-dark) 1px,transparent 1px);
+  background-size:54px 54px;
+  pointer-events:none;
+  mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000 30%,transparent 92%);
+}
+
+/* ===== CAD HUD ===== */
+.hud{
+  position:fixed;bottom:0;left:0;right:0;z-index:60;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:8px 18px;
+  font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;
+  color:var(--muted);
+  background:rgba(15,15,14,0.78);
+  backdrop-filter:blur(8px);
+  border-top:1px solid var(--line-dark);
+}
+.hud b{color:var(--gold);font-weight:500}
+@media(max-width:720px){.hud{display:none}}
+
+/* ===== nav ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 40px;
+  transition:background .3s,border-color .3s;
+  border-bottom:1px solid transparent;}
+.nav.scrolled{background:rgba(15,15,14,0.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dark)}
+.brand{font-family:var(--font-display);font-weight:600;font-size:16px;letter-spacing:-0.01em;display:inline-flex;align-items:center;gap:9px;cursor:pointer;transition:color .2s}
+.brand:hover{color:var(--gold)}
+.logo-mark{width:20px;height:20px;fill:var(--cream);flex-shrink:0;transition:fill .2s}
+.brand:hover .logo-mark{fill:var(--gold)}
+.foot .brand{font-size:18px}.foot .logo-mark{width:22px;height:22px}
+.brand span{color:var(--gold)}
+.nav-links{display:flex;gap:30px;font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;color:var(--muted)}
+.nav-links a:hover{color:var(--cream)}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* ===== hero ===== */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--ink);padding-top:80px}
+@media(max-width:860px){.hero{padding-top:100px;padding-bottom:48px;min-height:auto}}
+.hero-grid{position:absolute;inset:0;
+  background-image:
+    linear-gradient(var(--line-dark) 1px,transparent 1px),
+    linear-gradient(90deg,var(--line-dark) 1px,transparent 1px);
+  background-size:54px 54px;
+  animation:drift 40s linear infinite;
+  mask-image:radial-gradient(ellipse 70% 70% at 70% 50%,#000 10%,transparent 80%);}
+@keyframes drift{to{background-position:54px 54px}}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr 0.95fr;gap:40px;align-items:center;width:100%}
+.hero-text{display:flex;flex-direction:column;gap:0}
+.hero h1{font-size:clamp(36px,5.5vw,72px);font-weight:700;letter-spacing:-0.03em;margin:24px 0 28px}
+.hero h1 .em{color:var(--gold)}
+.hero-sub{font-size:clamp(17px,1.5vw,20px);color:#CFC9B8;max-width:560px;margin-bottom:40px;line-height:1.65}
+.cta-row{display:flex;gap:16px;flex-wrap:wrap}
+.btn{font-family:var(--font-mono);font-size:13px;letter-spacing:0.06em;padding:15px 26px;border:1px solid var(--gold);color:var(--gold);transition:all .2s;display:inline-flex;align-items:center;gap:10px}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.btn.solid{background:var(--gold);color:var(--ink)}
+.btn.solid:hover{background:var(--gold-bright);border-color:var(--gold-bright)}
+.btn .arr{transition:transform .2s}
+.btn:hover .arr{transform:translateX(4px)}
+
+/* hero 3d model */
+.hero3d-wrap{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:440px}
+#hero3d{width:100%;height:440px;cursor:grab;touch-action:pan-y}
+#hero3d:active{cursor:grabbing}
+#hero3d canvas{display:block}
+.frame-cap{font-family:var(--font-mono);font-size:11px;color:var(--muted);letter-spacing:0.08em;margin-top:6px;align-self:flex-start}
+.drag-hint{color:var(--gold)}
+.scroll-cue{position:absolute;bottom:54px;left:40px;z-index:3;font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--muted);display:flex;align-items:center;gap:10px}
+.scroll-cue .bar{width:1px;height:34px;background:var(--gold);animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+@media(max-width:860px){
+  /* stack to single column */
+  .hero-inner{grid-template-columns:1fr;gap:0}
+  /* hero-text becomes a flex column, items reordered */
+  .hero-text{display:contents}
+  .hero-top{order:1}
+  .hero3d-wrap{order:2;min-height:280px;width:100%}
+  #hero3d{height:280px}
+  .hero-bottom{order:3}
+  .scroll-cue{display:none}
+}
+
+/* ===== metric strip ===== */
+.metrics{background:var(--ink-2);border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark)}
+.metrics .wrap{display:grid;grid-template-columns:repeat(7,1fr);padding-top:46px;padding-bottom:46px}
+.metric{text-align:left;border-left:1px solid var(--line-dark);padding-left:18px}
+.metric:first-child{border-left:none;padding-left:0}
+.metric .num{font-family:var(--font-display);font-weight:600;font-size:30px;color:var(--gold);letter-spacing:-0.02em;line-height:1}
+.metric .lbl{font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:10px;line-height:1.4}
+@media(max-width:860px){.metrics .wrap{grid-template-columns:repeat(2,1fr);gap:30px 18px}.metric:nth-child(odd){border-left:none;padding-left:0}.metric{border-left:1px solid var(--line-dark);padding-left:18px}}
+
+/* ===== thesis ===== */
+.thesis h2{font-size:clamp(28px,3.4vw,44px);max-width:880px;margin-bottom:30px;line-height:1.18}
+.thesis h2 .hl{color:var(--gold)}
+.thesis p{color:#CFC9B8;max-width:680px;font-size:18px}
+.thesis .lede{font-size:20px;margin-bottom:22px}
+.thesis-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:50px;align-items:center}
+.thesis-copy h2,.thesis-copy p{max-width:560px}
+.thesis-media{position:relative}
+.video-frame{position:relative;border:1px solid var(--line-dark);border-radius:10px;overflow:hidden;background:#000;box-shadow:0 26px 64px rgba(0,0,0,0.45)}
+.video-frame video{display:block;width:100%;height:auto}
+.video-cap{font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+@media(max-width:860px){.thesis-grid{grid-template-columns:1fr;gap:30px}.thesis-copy h2,.thesis-copy p{max-width:none}}
+
+/* ===== timeline ===== */
+.tl-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:60px}
+.tl-head h2{font-size:clamp(28px,3.4vw,46px)}
+.wave-tag{font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;color:var(--gold);border:1px solid var(--gold);padding:8px 14px;text-transform:uppercase}
+.wave-label{font-family:var(--font-mono);font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted-dark);margin:60px 0 26px;display:flex;align-items:center;gap:16px}
+.wave-label::after{content:"";flex:1;height:1px;background:var(--line-light)}
+.tl{position:relative;padding-left:0}
+.tl-row{display:grid;grid-template-columns:108px 1fr;gap:0;border-top:1px solid var(--line-light);padding:26px 0}
+.tl-row:last-child{border-bottom:1px solid var(--line-light)}
+.tl-year{font-family:var(--font-mono);font-weight:500;font-size:22px;color:var(--gold);letter-spacing:-0.01em}
+.tl-body h4{font-family:var(--font-display);font-weight:600;font-size:19px;margin-bottom:6px;color:var(--ink)}
+.tl-body p{font-size:15.5px;color:#4A463C;max-width:620px}
+.tl-body .ph{color:#9A7420;font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em}
+
+/* ===== genesis spine ===== */
+.spine{display:grid;grid-template-columns:0.9fr 1.1fr;gap:60px;align-items:center}
+.spine h2{font-size:clamp(28px,3.2vw,42px);margin-bottom:26px}
+.spine h2 .hl{color:var(--gold)}
+.spine p{color:#CFC9B8;margin-bottom:18px;font-size:17px}
+.spine-diagram{border:1px solid var(--line-dark);padding:34px;background:rgba(244,240,230,0.02)}
+.layer{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-dark)}
+.layer:last-child{border-bottom:none}
+.layer .code{font-family:var(--font-mono);font-size:11px;color:var(--gold);width:54px;flex-shrink:0}
+.layer .nm{font-family:var(--font-display);font-weight:500;font-size:16px}
+.layer .desc{font-size:13px;color:var(--muted);margin-left:auto;text-align:right}
+@media(max-width:860px){.spine{grid-template-columns:1fr;gap:36px}.layer .desc{display:none}}
+
+/* genesis platform video */
+.genesis-video{margin-top:64px}
+.gv-frame{position:relative;border:1px solid var(--line-dark);border-radius:10px;overflow:hidden;background:#000;box-shadow:0 28px 72px rgba(0,0,0,0.55)}
+.gv-frame video{display:block;width:100%;height:auto}
+
+/* polaris section */
+.polaris-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-bottom:64px}
+.polaris-intro h2{font-size:clamp(28px,3.4vw,46px);margin-bottom:24px}
+.polaris-intro h2 .hl{color:var(--gold)}
+.polaris-intro .left p{color:#CFC9B8;font-size:17px;margin-bottom:16px}
+.pg-item{display:grid;grid-template-columns:60px 1fr;gap:0;padding:16px 0;border-bottom:1px solid var(--line-dark)}
+.pg-item:first-child{border-top:1px solid var(--line-dark)}
+.pg-year{font-family:var(--font-mono);font-size:11px;color:var(--gold);font-weight:500;padding-top:4px;letter-spacing:0.06em}
+.pg-text b{color:var(--cream);font-weight:500;display:block;margin-bottom:2px;font-size:15px}
+.pg-text span{font-size:14px;color:var(--muted);line-height:1.55}
+.polaris-caps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-bottom:56px}
+.pc{background:var(--ink-2);padding:24px 22px;transition:background .2s}
+.pc:hover{background:var(--surface)}
+.pc .pc-icon{font-size:24px;margin-bottom:12px;line-height:1}
+.pc h4{font-family:var(--font-display);font-weight:600;font-size:15px;margin-bottom:6px;color:var(--cream)}
+.pc p{font-size:13.5px;color:var(--muted);line-height:1.6;margin:0}
+.polaris-frame{position:relative;border:1px solid var(--line-dark);border-radius:12px;overflow:hidden;background:#000;box-shadow:0 36px 90px rgba(0,0,0,0.65)}
+.polaris-frame video{display:block;width:100%;height:auto;max-width:100%}
+@media(max-width:860px){.polaris-intro{grid-template-columns:1fr;gap:36px}.polaris-caps{grid-template-columns:1fr 1fr}}
+.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:50px}
+.tool{background:var(--ink);padding:30px 28px;transition:background .2s;position:relative}
+.tool:hover{background:var(--surface)}
+.tool .tnum{font-family:var(--font-mono);font-size:11px;color:var(--muted-dark);letter-spacing:0.08em}
+.tool h4{font-family:var(--font-display);font-weight:600;font-size:20px;margin:14px 0 10px}
+.tool p{font-size:14px;color:var(--muted);line-height:1.6;min-height:66px}
+.status{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;margin-top:18px}
+.dot{width:7px;height:7px;border-radius:50%}
+.s-live .dot{background:#5DCAA5}.s-live{color:#5DCAA5}
+.s-dev .dot{background:var(--gold)}.s-dev{color:var(--gold)}
+.s-plan .dot{background:var(--muted)}.s-plan{color:var(--muted)}
+.prog{height:2px;background:var(--line-dark);margin-top:16px;position:relative;overflow:hidden}
+.prog i{position:absolute;left:0;top:0;bottom:0;background:var(--gold);width:0;transition:width 1.1s ease}
+@media(max-width:860px){.tool-grid{grid-template-columns:1fr}.tool p{min-height:auto}}
+
+/* ===== impact ===== */
+.impact h2{font-size:clamp(28px,3.4vw,46px);margin-bottom:14px}
+.impact .sub{color:#4A463C;max-width:640px;margin-bottom:50px;font-size:17px}
+.chart-card{border:1px solid var(--line-light);padding:34px 34px 30px;background:#fff}
+.chart-card .ctitle{font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#9A7420;margin-bottom:6px}
+.chart-card .cnote{font-size:14px;color:#4A463C;margin-bottom:24px}
+.impact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:34px}
+.imp-card{border:1px solid var(--line-light);padding:28px 26px;background:#fff}
+.imp-card .big{font-family:var(--font-display);font-weight:700;font-size:40px;color:var(--gold);letter-spacing:-0.02em;line-height:1}
+.imp-card .big small{font-size:18px;font-weight:500}
+.imp-card h4{font-family:var(--font-display);font-weight:600;font-size:17px;margin:16px 0 8px;color:var(--ink)}
+.imp-card p{font-size:14px;color:#4A463C;line-height:1.6}
+.imp-card .tag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#9A7420;margin-bottom:14px;display:block}
+@media(max-width:860px){.impact-grid{grid-template-columns:1fr}}
+
+/* ===== architecture ===== */
+.arch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:50px}
+.arch{background:var(--ink);padding:28px 26px}
+.arch .role{font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.arch h4{font-family:var(--font-display);font-weight:500;font-size:18px;margin-bottom:8px}
+.arch p{font-size:14px;color:var(--muted)}
+@media(max-width:860px){.arch-grid{grid-template-columns:1fr}}
+
+/* ===== roadmap ===== */
+.road-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:50px}
+.road{border:1px solid var(--line-dark);padding:30px 28px;position:relative}
+.road .horizon{font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:14px}
+.road h4{font-family:var(--font-display);font-weight:600;font-size:20px;margin-bottom:10px;color:var(--gold)}
+.road p{font-size:15px;color:#CFC9B8;line-height:1.6}
+@media(max-width:860px){.road-grid{grid-template-columns:1fr}}
+
+/* ===== cta / footer ===== */
+.cta-sec{text-align:center;padding:140px 0}
+.cta-sec h2{font-size:clamp(30px,4vw,56px);margin-bottom:24px}
+.cta-sec h2 .hl{color:var(--gold)}
+.cta-sec p{color:#CFC9B8;max-width:520px;margin:0 auto 40px;font-size:18px}
+.foot{border-top:1px solid var(--line-dark);padding:46px 0 70px}
+.foot .foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px}
+.foot .brand{font-size:18px}
+.foot-right{display:flex;flex-direction:column;gap:14px;align-items:flex-end;text-align:right}
+.foot-links{display:flex;gap:22px;font-family:var(--font-mono);font-size:12px;letter-spacing:0.04em}
+.foot-links a{color:var(--muted)}.foot-links a:hover{color:var(--gold)}
+.foot .meta{font-family:var(--font-mono);font-size:11px;color:var(--muted-dark);letter-spacing:0.06em;line-height:1.8}
+.foot-bottom{margin-top:38px;padding-top:24px;border-top:1px solid var(--line-dark);text-align:center}
+.ir-link{font-family:var(--font-mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted)}
+.ir-link:hover{color:var(--gold)}
+@media(max-width:680px){.foot .foot-top{flex-direction:column}.foot-right{text-align:left;align-items:flex-start}}
+
+/* interactive glow */
+.btn:hover{box-shadow:0 0 26px rgba(201,154,63,.30)}
+.tool,.arch,.road{overflow:hidden}
+.arch,.road{position:relative}
+.tool:hover{box-shadow:inset 0 0 0 1px rgba(201,154,63,.40),0 0 34px rgba(201,154,63,.12)}
+.arch:hover{box-shadow:inset 0 0 0 1px rgba(201,154,63,.35)}
+.road:hover{box-shadow:inset 0 0 0 1px rgba(201,154,63,.35);transform:translateY(-3px);transition:box-shadow .25s,transform .25s}
+.metric:hover .num{text-shadow:0 0 18px rgba(201,154,63,.45)}
+.layer:hover .nm{color:var(--gold-bright)}
+.imp-card,.chart-card{transition:border-color .25s,box-shadow .25s,transform .25s}
+.imp-card:hover,.chart-card:hover{border-color:var(--gold);box-shadow:0 0 30px rgba(201,154,63,.16);transform:translateY(-3px)}
+.spine-diagram{transition:box-shadow .3s}
+.spine-diagram:hover{box-shadow:0 0 34px rgba(201,154,63,.10)}
+
+/* about this page */
+.about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}
+.about-card{background:#fff;border:1px solid var(--line-light);border-radius:8px;padding:22px 20px;transition:border-color .25s,box-shadow .25s,transform .25s}
+.about-card:hover{border-color:var(--gold);box-shadow:0 0 24px rgba(201,154,63,.12);transform:translateY(-3px)}
+.about-card .ac-t{font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9A7420;margin-bottom:10px}
+.about-card p{font-size:14.5px;color:#4A463C;margin:0;line-height:1.6}
+@media(max-width:680px){.about-grid{grid-template-columns:1fr}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  .draw{stroke-dashoffset:0!important}
+  .node{opacity:1!important}
+}
+
+
+/* ===== subpage hero ===== */
+.page-hero{position:relative;min-height:72vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);padding-top:110px;padding-bottom:70px}
+.page-hero .ph-canvas{position:absolute;inset:0;width:100%;height:100%}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero h1{font-size:clamp(38px,5.6vw,74px);font-weight:700;letter-spacing:-0.03em;max-width:900px;margin:20px 0 22px}
+.page-hero h1 .em{color:var(--gold)}
+.page-hero .ph-sub{font-size:clamp(16px,1.4vw,19px);color:#CFC9B8;max-width:640px;line-height:1.65}
+.ph-syslabel{position:absolute;top:96px;right:40px;z-index:2;font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;color:var(--muted);text-align:right;line-height:1.9}
+.ph-syslabel b{color:var(--gold);font-weight:500}
+@media(max-width:860px){.ph-syslabel{display:none}.page-hero{min-height:62vh}}
+/* explore cards on home */
+.explore-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:50px}
+.ex-card{background:var(--ink);padding:34px 30px;display:block;transition:background .2s}
+.ex-card:hover{background:var(--surface)}
+.ex-card .ex-num{font-family:var(--font-mono);font-size:11px;color:var(--gold);letter-spacing:0.1em}
+.ex-card h3{font-family:var(--font-display);font-weight:600;font-size:23px;margin:14px 0 8px;color:var(--cream)}
+.ex-card p{font-size:14.5px;color:var(--muted);line-height:1.6;margin-bottom:16px}
+.ex-card .ex-go{font-family:var(--font-mono);font-size:12px;color:var(--gold);letter-spacing:0.06em}
+.ex-card:hover .ex-go{color:var(--gold-bright)}
+@media(max-width:720px){.explore-grid{grid-template-columns:1fr}}
+/* hamburger */
+.nav-burger{display:none;background:none;border:1px solid var(--line-dark);color:var(--cream);font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;padding:9px 14px;cursor:pointer}
+@media(max-width:860px){
+  .nav-burger{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(15,15,14,0.97);backdrop-filter:blur(12px);flex-direction:column;gap:0;padding:10px 0;border-bottom:1px solid var(--line-dark)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:14px 40px;border-top:1px solid var(--line-dark)}
+}
+.nav-links a.active{color:var(--gold)}
+
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="brand" aria-label="The BIM Factory, home"><svg class="logo-mark" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M 499.18,14.96 L 384.48,365.86 L 42.93,365.86 L 319.06,567.23 L 207.76,908.78 L 500.03,699.77 L 789.76,908.78 L 712.44,670.88 L 387.03,367.56 L 720.09,542.59 L 967.34,365.86 L 613.89,365.86 Z"/></svg>THE BIM FACTORY<span>.</span></a>
+  <button class="nav-burger" id="burger" aria-label="Menu">MENU</button>
+  <div class="nav-links" id="navlinks">
+    <a href="index.html">HOME</a>
+    <a href="story.html">STORY</a>
+    <a href="platform.html" class="active">PLATFORM</a>
+    <a href="tools.html">TOOLS</a>
+    <a href="impact.html">IMPACT</a>
+  </div>
+</nav>
+
+<header class="page-hero" id="top">
+  <canvas class="ph-canvas" id="netCanvas" aria-hidden="true"></canvas>
+  <div class="ph-syslabel">GENESIS.NET / CONNECTED<br/><b>8 TOOLS / 1 DATABASE</b></div>
+  <div class="wrap">
+    <div class="eyebrow">THE PLATFORM</div>
+    <h1>Eight tools. One spine. <span class="em">Every node you see is real.</span></h1>
+    <p class="ph-sub">The network above is not decoration. Those are our actual tools, orbiting the actual database they all write to. This page is the system drawn honestly.</p>
+  </div>
+</header>
+
+<!-- ============ GENESIS SPINE ============ -->
+<section class="sec deep" id="platform">
+  <div class="wrap">
+    <div class="eyebrow rv">01 / GENESIS</div>
+    <div class="spine">
+      <div>
+        <h2 class="rv">BIM Genesis is the <span class="hl">spine.</span></h2>
+        <p class="rv">For years the tools were separate. Genesis is the layer that brings them together: one platform, talking to one database, Polaris, serving both our team and our clients.</p>
+        <p class="rv">It is the difference between owning a drawer of useful tools and running a system. It is also what turns a service company into a platform company, because the same software that runs our delivery can be opened to the clients and the wider BIM community.</p>
+        <a href="https://tbf-tools.com/en" class="btn" style="margin-top:14px">Visit tbf-tools.com <span class="arr">&rarr;</span></a>
+      </div>
+      <div class="spine-diagram rv">
+        <div class="layer"><span class="code">L4</span><span class="nm">Client and team interfaces</span><span class="desc">Genesis web portal</span></div>
+        <div class="layer"><span class="code">L3</span><span class="nm">The tools</span><span class="desc">8 applications</span></div>
+        <div class="layer"><span class="code">L2</span><span class="nm">Polaris database</span><span class="desc">Single source of truth</span></div>
+        <div class="layer"><span class="code">L1</span><span class="nm">Cloud infrastructure</span><span class="desc">Servers, security, payments</span></div>
+      </div>
+    </div>
+    <div class="genesis-video rv">
+      <div class="gv-frame">
+        <video autoplay loop muted playsinline preload="metadata" aria-label="BIM Genesis platform running live, showing the tool suite and dashboard">
+          <source src="BIM_Genesis_web.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-cap">BIM Genesis / platform dashboard / tbf-tools.com / live</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POLARIS ============ -->
+<section class="sec dark" id="polaris">
+  <div class="wrap">
+    <div class="eyebrow rv">02 / POLARIS</div>
+    <div class="polaris-intro">
+      <div class="left">
+        <h2 class="rv">It started as a task monitor. It became the <span class="hl">operating system</span> of TBF.</h2>
+        <p class="rv">Polaris began in 2019 with a single purpose: track what the team was working on each day. That was the whole brief. Within months it was doing more. Within a year it was doing things we had not planned for. Within three years it had become the connective tissue of the entire company.</p>
+        <p class="rv">No other company uses it. It is built entirely around how TBF works, because no off-the-shelf tool could be made to fit the combination of things we needed in one place. That specificity is also what makes it powerful.</p>
+      </div>
+      <div class="rv">
+        <div class="pg-item"><div class="pg-year">2019</div><div class="pg-text"><b>Daily task monitor</b><span>The original scope. A simple log of what the team was working on each day, replacing scattered messages and verbal updates.</span></div></div>
+        <div class="pg-item"><div class="pg-year">2020</div><div class="pg-text"><b>Hours and workload tracking</b><span>Estimation data and delivery timelines meant we needed to know who was carrying what. Polaris absorbed it.</span></div></div>
+        <div class="pg-item"><div class="pg-year">2021</div><div class="pg-text"><b>Leave requests and HR flows</b><span>Annual leave, time off, request approvals. The HR function needed a home inside the same system the team already used daily.</span></div></div>
+        <div class="pg-item"><div class="pg-year">2022</div><div class="pg-text"><b>Procurement and office requests</b><span>Order a mouse pad, a monitor arm, lunch. Anything the team needs is requested, approved, and tracked through Polaris without a separate tool or email chain.</span></div></div>
+        <div class="pg-item"><div class="pg-year">2023</div><div class="pg-text"><b>Onboarding and training</b><span>New staff complete their onboarding entirely inside Polaris. Training materials, role guides, and progress tracking all live here.</span></div></div>
+        <div class="pg-item"><div class="pg-year">2024</div><div class="pg-text"><b>TBF AI assistant</b><span>Ask the AI anything about the company: which tool to use, who to contact, what the process is. It knows TBF because it is trained on TBF.</span></div></div>
+        <div class="pg-item"><div class="pg-year">2025</div><div class="pg-text"><b>Tool finder and full integration</b><span>Polaris now surfaces the right Revit add-in or Genesis tool for any modeling task. Every part of daily work touches it.</span></div></div>
+      </div>
+    </div>
+    <div class="polaris-caps rv">
+      <div class="pc"><div class="pc-icon">📋</div><h4>Daily operations</h4><p>Tasks, hours, workloads, and project status for every person on the team, updated in real time.</p></div>
+      <div class="pc"><div class="pc-icon">🤖</div><h4>TBF AI</h4><p>An AI assistant trained on TBF knowledge. Ask it anything about process, tools, contacts, or company policy and get an answer grounded in how we actually work.</p></div>
+      <div class="pc"><div class="pc-icon">🛠️</div><h4>Tool finder</h4><p>Describe what you are trying to model and Polaris identifies the right Revit add-in or Genesis tool to use, from a library of 75+.</p></div>
+      <div class="pc"><div class="pc-icon">🛒</div><h4>Procurement</h4><p>From a replacement mouse pad to office lunch, every request is logged, approved, and fulfilled through one channel.</p></div>
+      <div class="pc"><div class="pc-icon">🎓</div><h4>Onboarding and training</h4><p>New staff complete every step of their onboarding inside Polaris, from first-day guides to role-specific training modules.</p></div>
+      <div class="pc"><div class="pc-icon">📅</div><h4>Leave and HR</h4><p>Leave requests, approvals, and entitlement tracking handled end to end without a separate HR system.</p></div>
+    </div>
+    <div class="polaris-frame rv">
+      <video autoplay loop muted playsinline preload="metadata" aria-label="Polaris app running live, showing daily tasks, workload tracking, and the TBF AI assistant">
+        <source src="PolarisApp_web.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="video-cap" style="margin-top:14px">Polaris / internal operating system / daily tasks, workload, HR, procurement, onboarding, TBF AI / live</div>
+  </div>
+</section>
+
+<!-- ============ ARCHITECTURE ============ -->
+<section class="sec deep">
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow rv">03 / THE STACK</div>
+    <h2 class="rv" style="font-size:clamp(28px,3.4vw,46px)">What it runs on.</h2>
+    <p class="rv" style="color:#CFC9B8;max-width:620px;margin-top:18px">No black boxes. The infrastructure behind Genesis is named, current, and built for an audience that asks how things work.</p>
+    <div class="arch-grid">
+      <div class="arch rv"><div class="role">Data</div><h4>Polaris DB</h4><p>The central database. One source of truth for projects, estimates, contracts, and delivery.</p></div>
+      <div class="arch rv"><div class="role">Platform</div><h4>BIM Genesis</h4><p>The application layer that houses every tool and connects them to Polaris.</p></div>
+      <div class="arch rv"><div class="role">Infrastructure</div><h4>Digital Ocean</h4><p>Server based services hosting the platform and its tools.</p></div>
+      <div class="arch rv"><div class="role">Security</div><h4>Cloudflare</h4><p>Protection against external attacks and traffic at the edge.</p></div>
+      <div class="arch rv"><div class="role">Intelligence</div><h4>OpenAI</h4><p>AI services powering estimation suggestions and query features.</p></div>
+      <div class="arch rv"><div class="role">Payments</div><h4>Stripe</h4><p>Transactions and the credit system that runs across Genesis.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROADMAP ============ -->
+<section class="sec dark" id="roadmap">
+  <div class="wrap">
+    <div class="eyebrow rv">04 / WHERE THIS GOES</div>
+    <h2 class="rv" style="font-size:clamp(28px,3.4vw,46px)">Roadmap, not hype.</h2>
+    <p class="rv" style="color:#CFC9B8;max-width:620px;margin-top:18px">These are stated as intent, because they are not shipped yet. We separate what runs today from what is coming.</p>
+    <div class="road-grid">
+      <div class="road rv"><div class="horizon">Near term</div><h4>Subscription access</h4><p>Open the Revit toolset and Genesis tools to outside teams on a subscription, turning internal software into a product line.</p></div>
+      <div class="road rv"><div class="horizon">Near term</div><h4>Five minute quotes</h4><p>The target on the chart above. Drive quote turnaround from hours to minutes through deeper Quote Builder and Estimaster automation.</p></div>
+      <div class="road rv"><div class="horizon">Mid term</div><h4>AI-assisted estimation</h4><p>Machine learning trained on TBF project history to suggest estimates and flag risk, with a human reviewer in the loop.</p></div>
+      <div class="road rv"><div class="horizon">Mid term</div><h4>BIM Repository marketplace</h4><p>A premium library where the wider BIM community can buy, share, and contribute components, with Genesis as the storefront.</p></div>
+      <div class="road rv"><div class="horizon">Exploratory</div><h4>Blockchain audit trails</h4><p>For Co-Sign, tamper-evident logs on document approvals where compliance demands it. Scoped as an optional feature, not a core promise.</p></div>
+      <div class="road rv"><div class="horizon">Exploratory</div><h4>Workflow automation</h4><p>Connecting the tools end to end so an estimate flows into a contract, a delivery plan, and an invoice with less manual handoff.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="sec deep cta-sec">
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow rv" style="justify-content:center">05 / WORK WITH US</div>
+    <h2 class="rv">A BIM partner that <span class="hl">builds.</span></h2>
+    <p class="rv">If you deliver buildings, modules, or designs and want a partner whose tools keep up, talk to our team.</p>
+    <div class="cta-row rv" style="justify-content:center">
+      <a href="https://www.thebimfactory.com" class="btn solid">Visit thebimfactory.com <span class="arr">&rarr;</span></a>
+      <a href="mailto:info@the-bim-factory.com" class="btn">Talk to our team</a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="foot">
+  <div class="wrap foot-top">
+    <div class="brand"><svg class="logo-mark" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M 499.18,14.96 L 384.48,365.86 L 42.93,365.86 L 319.06,567.23 L 207.76,908.78 L 500.03,699.77 L 789.76,908.78 L 712.44,670.88 L 387.03,367.56 L 720.09,542.59 L 967.34,365.86 L 613.89,365.86 Z"/></svg>THE BIM FACTORY<span style="color:var(--gold)">.</span></div>
+    <div class="foot-right">
+      <div class="foot-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></div>
+      <div class="meta">
+        Ho Chi Minh City, Vietnam. Deployed across 20+ countries.<br/>
+        Technology and R&D. Updated 2026.
+      </div>
+    </div>
+  </div>
+  <div class="wrap foot-bottom"><a href="investors.html" class="ir-link">Investor Relations</a></div>
+</footer>
+
+<div class="hud">
+  <span>THE BIM FACTORY / TECHNOLOGY</span>
+  <span>X:<b id="hudx">000</b> Y:<b id="hudy">0000</b> / <b id="hudsec">TOP</b></span>
+  <span>v2.0</span>
+</div>
+
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  // nav scrolled state
+  var nav = document.getElementById('nav');
+  function onScroll(){
+    if(window.scrollY > 40) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+    var x = String(Math.round(window.scrollX)).padStart(3,'0');
+    var y = String(Math.round(window.scrollY)).padStart(4,'0');
+    var hx=document.getElementById('hudx'), hy=document.getElementById('hudy');
+    if(hx)hx.textContent=x; if(hy)hy.textContent=y;
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // section readout for HUD
+  var secs = document.querySelectorAll('section[id], header[id]');
+  var hudsec = document.getElementById('hudsec');
+  var secObs = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting && hudsec){ hudsec.textContent = (e.target.id||'TOP').toUpperCase(); }});
+  },{threshold:0.5});
+  secs.forEach(function(s){secObs.observe(s);});
+
+  // reveal
+  var rvObs = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); rvObs.unobserve(e.target); }});
+  },{threshold:0.16, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ rvObs.observe(el); });
+
+  // progress bars
+  var progObs = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ var i=e.target.querySelector('i'); if(i){ i.style.width=(i.getAttribute('data-w')||0)+'%'; } progObs.unobserve(e.target); }});
+  },{threshold:0.4});
+  document.querySelectorAll('.prog').forEach(function(p){ progObs.observe(p); });
+
+  // count up
+  function countUp(el){
+    var target = +el.getAttribute('data-target');
+    var suffix = el.getAttribute('data-suffix')||'';
+    if(el.getAttribute('data-plain')){ el.textContent = target + suffix; return; }
+    if(reduce){ el.textContent = target + suffix; return; }
+    var start = null, dur = 1400;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts-start)/dur,1);
+      var eased = 1-Math.pow(1-p,3);
+      el.textContent = Math.round(target*eased) + suffix;
+      if(p<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var numObs = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ countUp(e.target.querySelector('.num')); numObs.unobserve(e.target); }});
+  },{threshold:0.5});
+  document.querySelectorAll('.metric').forEach(function(m){ numObs.observe(m); });
+
+  
+
+  var tv=document.getElementById('thesisVideo');
+  if(tv && reduce){ tv.removeAttribute('autoplay'); try{tv.pause();}catch(e){} }
+
+  var burger=document.getElementById('burger'), nl=document.getElementById('navlinks');
+  if(burger){ burger.addEventListener('click', function(){ nl.classList.toggle('open'); }); }
+})();
+</script>
+
+
+<script>
+(function(){
+  var cv=document.getElementById('netCanvas'); if(!cv) return;
+  var ctx=cv.getContext('2d');
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var W,H,dpr;
+  function size(){ dpr=Math.min(devicePixelRatio,2); W=cv.clientWidth; H=cv.clientHeight; cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); }
+  size(); addEventListener('resize',size);
+  var gold='#C99A3F', bright='#E2B85C', faint='rgba(244,240,230,0.16)';
+  var names=['ESTIMASTER','PROTRACK','QUOTE BUILDER','CO-SIGN','BEP CREATOR','REVIT TOOLS','CONTRACT MAKER','REPOSITORY'];
+  var nodes=names.map(function(n,i){
+    var ang=(i/names.length)*Math.PI*2 - Math.PI/2;
+    return {n:n, ang:ang, r:0.30+((i%2)?0.05:0), ph:Math.random()*6.28};
+  });
+  var pulses=[]; for(var i=0;i<names.length;i++) pulses.push({node:i, t:Math.random(), dir:1});
+  var mx=-1,my=-1;
+  cv.addEventListener('pointermove',function(e){ var r=cv.getBoundingClientRect(); mx=e.clientX-r.left; my=e.clientY-r.top; });
+  cv.addEventListener('pointerleave',function(){ mx=-1;my=-1; });
+  var t=0;
+  function frame(){
+    requestAnimationFrame(frame);
+    t+=reduce?0:0.008;
+    ctx.clearRect(0,0,W,H);
+    var cx=W*0.5, cy=H*0.52, R=Math.min(W,H);
+    // node positions
+    var P=nodes.map(function(nd){
+      var wob=reduce?0:Math.sin(t*2+nd.ph)*7;
+      var x=cx+Math.cos(nd.ang+t*0.25)*nd.r*R + wob;
+      var y=cy+Math.sin(nd.ang+t*0.25)*nd.r*R*0.62;
+      // gentle mouse attraction
+      if(mx>=0){ var dx=mx-x, dy=my-y, d=Math.hypot(dx,dy); if(d<130){ x+=dx*0.06; y+=dy*0.06; } }
+      return [x,y];
+    });
+    // edges
+    ctx.strokeStyle=faint; ctx.lineWidth=1;
+    ctx.beginPath();
+    P.forEach(function(p){ ctx.moveTo(cx,cy); ctx.lineTo(p[0],p[1]); });
+    ctx.stroke();
+    // pulses along edges
+    pulses.forEach(function(pl){
+      pl.t+=reduce?0:0.012; if(pl.t>1){ pl.t=0; pl.node=(pl.node+3)%P.length; }
+      var p=P[pl.node];
+      var px=p[0]+(cx-p[0])*pl.t, py=p[1]+(cy-p[1])*pl.t;
+      ctx.fillStyle=bright; ctx.globalAlpha=0.85;
+      ctx.beginPath(); ctx.arc(px,py,2.2,0,7); ctx.fill();
+      ctx.globalAlpha=1;
+    });
+    // hub
+    var hubPulse=reduce?0:Math.sin(t*3)*2;
+    ctx.strokeStyle=gold; ctx.lineWidth=1.5;
+    ctx.beginPath(); ctx.arc(cx,cy,17+hubPulse,0,7); ctx.stroke();
+    ctx.beginPath(); ctx.arc(cx,cy,7,0,7); ctx.fillStyle=gold; ctx.fill();
+    ctx.font='500 10px "JetBrains Mono", monospace';
+    ctx.fillStyle=gold; ctx.textAlign='center';
+    ctx.fillText('POLARIS DB', cx, cy+38+hubPulse);
+    ctx.fillStyle='rgba(244,240,230,0.55)';
+    ctx.fillText('GENESIS', cx, cy-28-hubPulse);
+    // nodes + labels
+    P.forEach(function(p,i){
+      ctx.fillStyle=gold;
+      ctx.beginPath(); ctx.arc(p[0],p[1],3.2,0,7); ctx.fill();
+      ctx.fillStyle='rgba(244,240,230,0.5)';
+      ctx.font='400 9.5px "JetBrains Mono", monospace';
+      ctx.fillText(nodes[i].n, p[0], p[1]-10);
+    });
+  }
+  frame();
+})();
+</script>
+</body>
+</html>
